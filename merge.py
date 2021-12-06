@@ -1,3 +1,5 @@
+# sumber https://www.geeksforgeeks.org/
+
 import timeit
 import math
 
