@@ -425,10 +425,12 @@ def main():
     timesIntro = list()
     elementsR = list()
     timesR = list()
-    for i in range(1,10):
+
+    # input besar
+    # for i in range(1,10):
 
 		# array acak
-        a = randint(0,100*i,1000*i)
+        # a = randint(0,100*i,1000*i)
 
 		# array menaik
         # b = randint(0,100*i,1000*i)
@@ -439,6 +441,27 @@ def main():
 
 		# array menurun
         # b = randint(0,100*i,1000*i)
+        # print('before => ', b)
+        # insertion_sort(b)
+        # print('after => ',b)
+        # a = b[::-1]
+        # print('after reverse => ',a)
+
+	# input kecil
+    for i in range(1,61):
+
+		# array acak
+        a = randint(0,16*i,16*i)
+
+		# array menaik
+        # b = randint(0,16*i,16*i)
+        # a = b
+        # print('before => ', b)
+        # insertion_sort(b)
+        # print('after => ',b)
+
+		# array menurun
+        # b = randint(0,16*i,16*i)
         # print('before => ', b)
         # insertion_sort(b)
         # print('after => ',b)
@@ -501,7 +524,7 @@ def main():
 
     # plt.figure(figsize=(30, 20))
     plt.xlabel('List Length')
-    plt.ylabel('Time Complexity')
+    plt.ylabel('Running Time')
     plt.plot(elementsI, timesI, label ='Insertion Sort',)
     plt.plot(elementsQ, timesQ, label ='Quick Sort',)
     plt.plot(elementsH, timesH, label ='Heap Sort',)
